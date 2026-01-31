@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio - Étudiant en Économie-Gestion" />
+  <title>Moncif Essouak — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil" aria-label="Aller à l'accueil">
+      <span class="dot"></span> Moncif Essouak
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#profil">Profil</a>
+      <a href="#formation">Formation</a>
+      <a href="#experience">Expérience</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      ☰
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="hero-card reveal">
+        <div class="hero-left">
+          <h1>Essouak Moncif</h1>
+          <p class="subtitle">Étudiant — Licence Économie & Gestion</p>
+          <p class="tagline">
+            Profil sérieux et orienté service : organisation, communication, sens des responsabilités.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="cv.pdf" download>Télécharger CV</a>
+            <a class="btn" href="#contact">Me contacter</a>
+          </div>
+
+          <div class="mini">
+            <span class="pill">Clermont-Ferrand</span>
+            <span class="pill">Français • Arabe • Anglais</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Option 1: image -->
+          <!-- <img class="avatar" src="assets/profile.jpg" alt="Photo de profil" /> -->
+
+          <!-- Option 2: avatar initiales (sans photo) -->
+          <div class="avatar" aria-hidden="true">
+            <span>ME</span>
+          </div>
+
+          <div class="quick">
+            <div class="quick-item">
+              <div class="quick-k">Âge</div>
+              <div class="quick-v">21 ans</div>
+            </div>
+            <div class="quick-item">
+              <div class="quick-k">Objectif</div>
+              <div class="quick-v">Stage / alternance / job étudiant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="section">
+      <div class="wrap">
+        <h2 class="reveal">Profil</h2>
+        <div class="grid2">
+          <div class="card reveal">
+            <h3>À propos</h3>
+            <p>
+              Étudiant en gestion, à l’aise dans les environnements où il faut
+              être rigoureux, fiable et à l’écoute. Habitué au travail d’équipe,
+              au contact public et aux responsabilités.
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3>Centres d’intérêt</h3>
+            <ul class="list">
+              <li>Judo — 10 ans de pratique</li>
+              <li>Voyages</li>
+              <li>Informatique (usage & outils)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="formation" class="section alt">
+      <div class="wrap">
+        <h2 class="reveal">Formation</h2>
+
+        <div class="timeline">
+          <article class="titem reveal">
+            <div class="tdate">Sep 2025 — en cours</div>
+            <div class="tbox">
+              <h3>L3 Management (en cours)</h3>
+              <p>UCA — Faculté des Sciences Économiques et de Gestion</p>
+            </div>
+          </article>
+
+          <article class="titem reveal">
+            <div class="tdate">2023 — 2025</div>
+            <div class="tbox">
+              <h3>L1 & L2 Économie-Gestion</h3>
+              <p>UCA — Faculté des Sciences Économiques et de Gestion</p>
+            </div>
+          </article>
+
+          <article class="titem reveal">
+            <div class="tdate">2022</div>
+            <div class="tbox">
+              <h3>Baccalauréat (spécialité)</h3>
+              <p>Mathématiques, Physique-Chimie, NSI</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="wrap">
+        <h2 class="reveal">Expérience</h2>
+
+        <div class="filters reveal">
+          <button class="chip active" data-filter="all">Tout</button>
+          <button class="chip" data-filter="service">Service</button>
+          <button class="chip" data-filter="logistique">Logistique</button>
+          <button class="chip" data-filter="securite">Responsabilité</button>
+        </div>
+
+        <div class="cards3" id="expCards">
+          <article class="card reveal" data-tags="securite service">
+            <h3>Agent de veille de nuit</h3>
+            <p class="meta">Crous Clermont-Ferrand — Sep 2025 → en cours</p>
+            <ul class="list">
+              <li>Interface résidents / direction : suivi besoins & incidents</li>
+              <li>Rondes de sécurité régulières</li>
+              <li>Accueil & assistance nocturne (clés, badges, urgences)</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-tags="service">
+            <h3>Service civique</h3>
+            <p class="meta">Association Family Social Club (Clermont-Ferrand) — Jan 2025 → Juil 2025</p>
+            <ul class="list">
+              <li>Soutien scolaire auprès d’enfants et adolescents</li>
+              <li>Animation d’ateliers éducatifs & ludiques</li>
+              <li>Participation à la vie associative & événements</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-tags="logistique">
+            <h3>Agent de tri colis (Intérim)</h3>
+            <p class="meta">Chronopost — Déc 2024 → Jan 2025</p>
+            <ul class="list">
+              <li>Réception, scan et acheminement des colis</li>
+              <li>Orientation vers les zones de traitement</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-tags="service">
+            <h3>Équipier polyvalent de restauration</h3>
+            <p class="meta">Eat Boulevard (Clermont-Ferrand) — Oct 2023 → Jan 2024</p>
+            <ul class="list">
+              <li>Réception & stockage des produits alimentaires</li>
+              <li>Nettoyage & remise en état de la salle</li>
+              <li>Accueil clients, prise de commandes, service</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section id="competences" class="section alt">
+      <div class="wrap">
+        <h2 class="reveal">Compétences</h2>
+
+        <div class="grid2">
+          <div class="card reveal">
+            <h3>Savoir-faire</h3>
+            <ul class="list">
+              <li>Communication</li>
+              <li>Force de propositions</li>
+              <li>Capacités d’organisation</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Langues</h3>
+
+            <div class="bar">
+              <div class="bar-top">
+                <span>Français</span><span class="muted">Très bon</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" style="width: 92%"></div></div>
+            </div>
+
+            <div class="bar">
+              <div class="bar-top">
+                <span>Arabe</span><span class="muted">Très bon</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" style="width: 90%"></div></div>
+            </div>
+
+            <div class="bar">
+              <div class="bar-top">
+                <span>Anglais</span><span class="muted">Intermédiaire</span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" style="width: 65%"></div></div>
+            </div>
+
+            <p class="hint">*(Barres indicatives, tu peux ajuster.)*</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2 class="reveal">Contact</h2>
+
+        <div class="grid2">
+          <div class="card reveal">
+            <h3>Coordonnées</h3>
+            <ul class="list">
+              <li><strong>Téléphone :</strong> <a href="tel:+33619324770">06 19 32 47 70</a></li>
+              <li><strong>Email :</strong> <a href="mailto:essouak.moncif@gmail.com">essouak.moncif@gmail.com</a></li>
+              <li><strong>Adresse :</strong> 2 rue Auguste Audollent, Clermont-Ferrand</li>
+            </ul>
+
+            <div class="cta">
+              <a class="btn primary" href="cv.pdf" download>Télécharger CV</a>
+              <a class="btn" href="mailto:essouak.moncif@gmail.com?subject=Contact%20Portfolio">Envoyer un email</a>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Petit message</h3>
+            <form id="fakeForm">
+              <label>
+                Nom
+                <input type="text" placeholder="Votre nom" />
+              </label>
+              <label>
+                Message
+                <textarea rows="4" placeholder="Votre message (copié dans le presse-papiers)"></textarea>
+              </label>
+              <button class="btn" type="submit">Copier le message</button>
+              <p class="hint">Ce formulaire ne “send” pas (GitHub Pages). Il copie le texte.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Essouak Moncif — Portfolio</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
